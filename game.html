@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guess Game</title>
+    <link rel="stylesheet" href="game.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Section 1: Button Generator -->
+    <div id="section1" class="container text-center mt-5">
+        <button class="btn btn-warning btn-lg" onclick="generate_number_btn_click()">Generate Number</button>
+    </div>
+
+    <!-- Section 2: Guess Number -->
+    <div id="section2" class="container">
+        <div class="row mt-5">
+            <div class="col-12">
+                <!-- Image -->
+                <img src="mark.jpeg" alt="" />
+                <p class="text-danger">Guess the number between 1 to 6</p>
+                <div class="form-group w-25 mx-auto">
+                    <input id="field" type="text" placeholder="Enter here" class="form-control">
+                </div>
+                <button class="btn btn-primary btn-sm mt-4" onclick="check_number()">Check</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3: Image and Generating Text -->
+    <div class="container text-center" id="section3">
+        <img class="img-fluid" style="width: 65px;" src="ludo.gif" alt="" />
+        <h2>Generating Number....</h2>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
